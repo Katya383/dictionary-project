@@ -14,7 +14,7 @@ export default function App() {
           />
         </header>
         <main>
-          <Dictionary defaultKeyword="yoga" />
+          <Dictionary defaultKeyword="dawn" />
         </main>
         <footer className="App-footer">
           <small>Coded by Katia Barnave and </small>

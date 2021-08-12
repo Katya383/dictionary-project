@@ -12,7 +12,7 @@ export default function Dictionary(props) {
     setResults(response.data[0]);
   }
 
-  function search(keyword) {
+  function search() {
     //documentation: https://dictionaryapi.dev/e
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
     axios.get(apiUrl).then(handleResponse);
@@ -35,8 +35,13 @@ export default function Dictionary(props) {
     return (
       <div className="Dictionary">
         <section>
+          <h1>What word do you want to look up?</h1>
           <form onSubmit={handleSubmit}>
-            <input type="search" onChange={handleKeywordChange} />
+            <input
+              type="search"
+              onChange={handleKeywordChange}
+              defaultValue={props.defaultKeyword}
+            />
           </form>
           <div className="hint">suggested words: sunset,wine,yoga,plant...</div>
         </section>
