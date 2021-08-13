@@ -21,12 +21,9 @@ export default function App() {
           <a href="https://github.com/Katya383/dictionary-project">
             {" "}
             open-sourced on Github
-          </a>
-          {""}
-          and
+          </a>{" "}
           <a href="https://brave-gates-d5766c.netlify.app/">
-            {""}
-            and hosted on Netlify.
+            hosted on Netlify.
           </a>
         </footer>
       </div>
